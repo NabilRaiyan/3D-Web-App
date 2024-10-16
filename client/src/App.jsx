@@ -1,3 +1,6 @@
+// until 1hr
+// link: https://www.youtube.com/watch?v=ZqEa8fTxypQ
+
 import Canvas from "./canvas"
 import Customizer from "./pages/Customizer"
 import Home from "./pages/Home"
