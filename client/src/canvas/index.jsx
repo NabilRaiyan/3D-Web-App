@@ -4,6 +4,7 @@ import Shirt from './Shirt'
 import Backdrop from './Backdrop'
 import CameraRig from './CameraRig'
 
+// creating canvas
 const CanvasModel = () => {
   return (
     <Canvas>
