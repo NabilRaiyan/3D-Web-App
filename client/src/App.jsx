@@ -1,4 +1,4 @@
-// until 1hr
+// until 1 hr 14 min
 // link: https://www.youtube.com/watch?v=ZqEa8fTxypQ
 
 import Canvas from "./canvas"
