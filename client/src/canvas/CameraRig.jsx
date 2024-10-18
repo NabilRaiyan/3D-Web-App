@@ -4,6 +4,7 @@ import { easing } from 'maath'
 import { useSnapshot } from 'valtio'
 import state from '../store'
 
+// Creating camera rig
 const CameraRig = ({ children }) => {
 
   const group = useRef();
