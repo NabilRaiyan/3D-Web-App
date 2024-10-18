@@ -16,6 +16,7 @@ const CanvasModel = () => {
 
       {/* Creating camera rig */}
       <CameraRig>
+        {/* Creating backdrop */}
         <Backdrop /> 
         <Center>
           <Shirt /> 
