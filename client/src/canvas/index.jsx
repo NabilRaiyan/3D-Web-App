@@ -14,6 +14,7 @@ const CanvasModel = () => {
       <ambientLight intensity={0.5}/>
       <Environment preset='city'/>
 
+      {/* Creating camera rig */}
       <CameraRig>
         <Backdrop /> 
         <Center>
