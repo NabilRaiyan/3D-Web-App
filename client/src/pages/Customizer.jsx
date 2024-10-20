@@ -5,7 +5,7 @@ import state from '../store'
 
 import { AnimatePresence, motion } from 'framer-motion'
 import config from '../config/config'
-import {download} from '../assets'
+import {download, logoShirt, stylishShirt} from '../assets'
 import { downloadCanvasToImage, reader} from '../config/helpers'
 import { EditorTabs, FilterTabs, DecalTypes } from '../config/constants'
 import { fadeAnimation, slideAnimation } from '../config/motion'
@@ -16,7 +16,30 @@ const Customizer = () => {
 
     const snap = useSnapshot(state)
 
+    const [file, setFile] = useState('')
+    const [prompt, setPrompt] = useState('')
+    const [generatingImg, setGeneratingImg] = useState(false)
+
+    const [activeEditorTab, setActiveEditorTab] = useState('')
+    const [activeFilterTab, setActiveFilterTab] = useState({
+        logoShirt: true,
+        stylishShirt: false
+    })
+
     // show tab content depending on active tab
+    const generateTabContent = () => {
+        switch (activeEditorTab) {
+            case "colorpicker": 
+                return <ColorPicker />
+            case "filepicker":
+                return <FilePicker />
+            case 'aipicker':
+                return <AiPicker />
+                default: 
+                    return null;
+        }
+
+    }
 
     return (
         <AnimatePresence>
