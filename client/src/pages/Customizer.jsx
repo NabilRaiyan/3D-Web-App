@@ -16,6 +16,8 @@ const Customizer = () => {
 
     const snap = useSnapshot(state)
 
+    // show tab content depending on active tab
+
     return (
         <AnimatePresence>
             {!snap.intro && (
