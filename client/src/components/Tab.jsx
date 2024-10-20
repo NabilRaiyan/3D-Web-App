@@ -1,4 +1,4 @@
-import React from 'react'
+/* eslint-disable no-undef */
 import { useSnapshot } from 'valtio'
 import state from '../store'
 
@@ -25,5 +25,6 @@ const Tab = ({tab, isFilterTab, isActiveTab, handleClick}) => {
     </div>
   )
 }
+
 
 export default Tab
